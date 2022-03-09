@@ -7,7 +7,8 @@ var
     y:= ((4*b*i)/(1+i*cos(i)));
     print (round(y));
     begin
-      for var i:=y to n do
-      y:=y+y
+      var p:integer;
+      for p:=n to n do
+        print (p+n);
     end;
   end.
