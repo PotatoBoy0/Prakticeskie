@@ -1,4 +1,4 @@
-﻿program Практическая_4_1;
+program Практическая_4_1;
 begin
   var y:real:=0;
   var (b,n) := ReadInteger2 ('Введите два числа');
