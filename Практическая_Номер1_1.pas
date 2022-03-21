@@ -1,4 +1,4 @@
-﻿program Практическая_Номер1_1;
+﻿program Практическая_1_1;
 var
     A,B,C,D:Integer;
 begin
