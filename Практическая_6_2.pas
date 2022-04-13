@@ -8,6 +8,8 @@ function RectPS(x1,y1,x2,y2,P,S:real):real;
 begin
   P:=2*(abs(x1-x2))+(abs(y1-y2));
   S:=abs(x1-x2)*abs(y1-y2);
+  result:= P;
+  result:= S;
 end;
 
 var x1,x2,y1,y2,P,S:real;
