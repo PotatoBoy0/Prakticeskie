@@ -18,7 +18,7 @@ begin
           if Массив[i]>=max then max:=Массив[i];
           println (Массив[i]);
         end;
-      println('Максимальное число=',max);
+      println('Максимальное число =',max);
     end;
 end;
 procedure multiply (i:integer);
@@ -32,7 +32,7 @@ begin
       end;
     for i:= 1 to 10 do
     if not odd(i) then
-    println ('Ответ', Массив[i]*0.5);
+    println ('Ответ =', Массив[i]*0.5);
     end;
 end;
 procedure proizvedenie (i:integer);
