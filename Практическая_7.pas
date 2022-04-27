@@ -22,21 +22,30 @@ begin
     end;
 end;
 procedure multiply (i:integer);
-  begin
-    for  i:=1 to 10 do
+begin
+  for  i:=1 to 10 do
+  Массив[i]:=random (-100,100);
+    begin
       begin
-         Массив[i]:=random (-100,100);
-         if not odd(i) then
-         println ('Ответ', Массив[i]*0.5);
+        for  i:=1 to 10 do
+        println (Массив[i]);
       end;
-  end;
+    for i:= 1 to 10 do
+    if not odd(i) then
+    println ('Ответ', Массив[i]*0.5);
+    end;
+end;
 procedure proizvedenie (i:integer);
 begin
-  for i:=1 to 10 do
+  for  i:=1 to 10 do
+  Массив[i]:=random (-100,100);
     begin
-      Массив[i]:=random (-100,100);
-      if i <> 0 then 
-      println ('Произведение массива =', Массив[i]*Массив[i]);
+      begin
+        for  i:=1 to 10 do
+        println (Массив[i]);
+      end;
+        if i <> 0 then 
+        println ('Произведение массива =', Массив[i]*Массив[i]);
     end;
 end;
 begin
