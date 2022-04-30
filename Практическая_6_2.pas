@@ -22,7 +22,7 @@ for var i:=1 to 3 do
 begin
   (x1,x2):=ReadReal2('Введите X координаты');
   (y1,y2):=ReadReal2('Введите Y координаты');
-  println('Перимерт=',RectPS(x1,y1,x2,y2,P));
+  println('Периметр=',RectPS(x1,y1,x2,y2,P));
   println('Площадь=',RectPS1(x1,y1,x2,y2,S));
 end;
 end.
