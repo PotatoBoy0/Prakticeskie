@@ -7,15 +7,15 @@
 4. Количество символов, принадлежащих к группе букв.
 }
 begin
-var МассивСимволов:array [1..3,1..3] of char;
-var КОЛ,ПУНКТ:integer;
-  for var ВысотаМ:=1 to 3 do
-    for var ШиринаМ:=1 to 3 do
+var MAS:array [1..3,1..3] of char;
+var amount,punct:integer;
+  for var Wight:=1 to 3 do
+    for var Hight:=1 to 3 do
     begin
-      МассивСимволов[ВысотаМ,ШиринаМ]:= ReadlnChar('Введите символ');
-      КОЛ:= МассивСимволов[ВысотаМ,ШиринаМ].IsLetter ? КОЛ+1:КОЛ;
-      ПУНКТ:= char.IsPunctuation(МассивСимволов[ВысотаМ,ШиринаМ]) ? ПУНКТ+ШиринаМ:ПУНКТ;
+      MAS[Hight,Wight]:= ReadlnChar('Введите символ');
+      amount:= MAS[Hight,Wight].IsLetter ? amount+1:amount;
+      punct:= char.IsPunctuation(MAS[Hight,Wight]) ? Hight:punct;
     end;
-    println ('Кол-во букв',КОЛ);
-    println ('Пунктуация',ПУНКТ);
+    println ('Кол-во букв',amount);
+    println ('Пунктуация',punct);
 end.
