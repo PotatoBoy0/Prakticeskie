@@ -16,17 +16,11 @@ begin
       amount := MAS[i, j].IsLetter ? amount + 1 : amount;
       punct := char.IsPunctuation(MAS[i, j]) ? j : punct;
     end;
-//Вывод квадратиком
   for i := 1 to 3 do
     for j := 1 to 3 do
-      for var k := 1 to 3 do
       begin
-        for var t := 1 to 3 do 
-          write(MAS[i, j]:3);
-        writeln;
+      println (MAS[i,j])
       end;
-//Вывод квадратиком
   println('Кол-во букв', amount);
   println('Пунктуация', punct);
 end.
-
